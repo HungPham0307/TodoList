@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
-abstract class Model
+use App\Connection\Database;
+
+abstract class Model  extends Database
 {
 }
