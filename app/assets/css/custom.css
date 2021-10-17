@@ -1,5 +1,5 @@
 body {
-  margin-top: 50px;
+  margin-top: 25px;
   text-align: center;
   font-size: 12px;
   font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
@@ -8,4 +8,107 @@ body {
 #calendar {
   width: 900px;
   margin: 0 auto;
+}
+
+.show-message {
+  height: 60px;
+  position: relative;
+}
+
+.notification {
+  padding: 10px 60px;
+  border: #c3e6c3 1px solid;
+  display: inline-block;
+  position: absolute;
+  right: 154px;
+  color: white;
+  font-size: 20px;
+}
+
+.success {
+  background: #28a745;
+}
+
+.delete {
+  background: #dc3545;
+}
+
+.fail {
+  background: #dc3545;
+}
+
+.modal-work-content {
+  text-align: left;
+  margin-left: 10%;
+}
+
+.modal-body input,
+select {
+  height: 30px;
+  width: 200px;
+}
+
+.label-create-status {
+  margin-right: 22px;
+}
+
+.label-update-status {
+  margin-right: 31px;
+}
+
+.label-update {
+  margin-right: 12px;
+}
+
+.label-end-date {
+  margin-right: 16px;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-header {
+  position: relative;
+}
+
+.modal-header .close {
+  position: absolute;
+  right: 43px;
+  top: 24px;
+}
+
+.doing {
+  background-color: #fa8c16;
+}
+
+.complete {
+  background-color: #28a745;
+}
+
+.planning {
+  background-color: #337ab7;
+}
+
+.color-info {
+  width: 61px;
+  height: 14px;
+  border-radius: 2px;
+  position: absolute;
+  left: 200px;
+}
+
+.info {
+  position: relative;
+}
+
+.info span {
+  position: absolute;
+  left: 294px;
+  font-weight: 800;
+}
+
+.info h1 {
+  margin: 0;
+  font-weight: bold;
 }
