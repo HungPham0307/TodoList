@@ -3,7 +3,7 @@ require './app/views/layouts/header.php';
 ?>
 
 <body>
-    <h1>Trang chu</h1>
+    <div id='calendar'></div>
 </body>
 
 <?php
