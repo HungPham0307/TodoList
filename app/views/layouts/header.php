@@ -10,6 +10,6 @@
     <script src="./app/assets/library/fullcalendar/lib/jquery.min.js"></script>
     <script src="./app/assets/library/fullcalendar/lib/moment.min.js"></script>
     <script src="./app/assets/library/fullcalendar/fullcalendar.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./app/assets/js/fullcalendar.js"></script>
 </head>

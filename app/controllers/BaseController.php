@@ -30,8 +30,14 @@ class BaseController
 
         // convert the first character to lowercase:
         $f = lcfirst($ctrl);
+        $mf = '__' . $this->method . $ctrl;
 
         // Verify that a value can be called as a function from the current scope
+
+        // call POST method
+        if (is_callable([$this, $mf])) return $this->$mf();
+
+        // call GET method
         if (is_callable([$this, $f])) return $this->$f();
 
         return $this->render('templates/404');
