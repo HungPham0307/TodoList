@@ -10,13 +10,11 @@ class BaseController
 
     public $uri;
     public $method;
-    public $data;
 
     public function __construct($uri)
     {
         $this->uri = $uri;
-        $this->method = strtolower($_SERVER['REQUEST_METHOD']);
-        $this->data = (object) ['success' => false, 'data' => null];
+        $this->method = strtolower($_SERVER["REQUEST_METHOD"] ?? 'GET');
         $this->init();
     }
 

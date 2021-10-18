@@ -35,7 +35,7 @@ class Work extends Model
             $title = isset($_POST['title']) ? $_POST['title'] : "";
             $start = isset($_POST['start']) ? $_POST['start'] : "";
             $end = isset($_POST['end']) ? $_POST['end'] : "";
-            $status = isset($_POST['status']) ? $_POST['status'] : "";
+            $status = isset($_POST['status']) ? $_POST['status'] : WorkStatus::PLANNING;
 
             $insert = "INSERT INTO works (title,start,end,status) VALUES ('" . $title . "','" . $start . "','" . $end . "','" . $status . "')";
 
@@ -60,7 +60,7 @@ class Work extends Model
             $title = isset($_POST['title']) ? $_POST['title'] : "";
             $start = isset($_POST['start']) ? $_POST['start'] : "";
             $end = isset($_POST['end']) ? $_POST['end'] : "";
-            $status = isset($_POST['status']) ? $_POST['status'] : "";
+            $status = isset($_POST['status']) ? $_POST['status'] : WorkStatus::PLANNING;
 
             $update = "UPDATE works SET title='" . $title . "',start='" . $start . "',end='" . $end . "',status='" . $status . "' WHERE id=" . $id;
 
